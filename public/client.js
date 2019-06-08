@@ -64,3 +64,10 @@ var app7 = new Vue({
     ]
   }
 })
+
+var data = { a: 1 }
+
+var vm = new Vue({
+  el: '#vm',
+  data: data
+})
