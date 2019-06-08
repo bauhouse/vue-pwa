@@ -64,8 +64,17 @@
       <p>{{ a }}</p>
     </div>
     <h1>Component Basics</h1>
+    <h2>Button Counter</h2>
     <div id="components-demo">
       <button-counter></button-counter>
+    </div>
+    <h2>Blog Posts</h2>
+    <div id="blog-post-demo">
+      <blog-post
+        v-for="post in posts"
+        v-bind:key="post.id"
+        v-bind:title="post.title"
+      ></blog-post>
     </div>
     <script src="/client.js" defer></script>
   </body>
